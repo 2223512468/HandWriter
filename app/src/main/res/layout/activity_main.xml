@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/draw_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/pen" />
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/eraser_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/eraser_button"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/send" />
+
+    <Button
+        android:id="@+id/eraser_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBaseline="@+id/draw_button"
+        android:layout_alignBottom="@+id/draw_button"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/eraser" />
+
+</RelativeLayout>
